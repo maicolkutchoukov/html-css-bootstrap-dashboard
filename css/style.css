@@ -15,11 +15,12 @@
     height: calc(100vh - var(--main-header-height));
 }
 
+.navbar-brand .logo-sm-img{
+    max-width: 50px;
+}
 
 .aside-nav{
-
     background-color: rgb(0, 0, 0);
-
     background-image: url(../img/sidebar-bg.png);
     background-position: center
 }
@@ -28,11 +29,11 @@
     --bs-btn-border-color: black
 }
 
-.my-button{
+/* .my-button{
     border: 1px solid white;
     color: black;
     font-size: 200px;
-}
+} */
 
 .offcanvas.my-offcanvas{
     width: 70%;
@@ -40,6 +41,14 @@
 
 th > img{
     max-width: 25px;
+}
+
+th.name{
+    width: 40%;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
 }
 
 /* ----------- */
@@ -53,6 +62,7 @@ th > img{
 }
 
 /* ------------ */
+
 
 @media screen and (max-width: 576px){
     tr > th:nth-child(2){
