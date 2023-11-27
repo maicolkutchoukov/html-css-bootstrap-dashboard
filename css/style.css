@@ -4,21 +4,22 @@
 
 :root{
     --bs-btn-border-color: #fff;
+    --main-header-height: 60px
 }
 
-header{
-    height: 50px;
+#header-main {
+    height: var(--main-header-height)
+}
+
+#main-container{
+    height: calc(100vh - var(--main-header-height));
 }
 
 
 .aside-nav{
-    height: calc(100vh - 50px);
+
     background-color: rgb(0, 0, 0);
-    color:white;
-    position: sticky;
-    top:50px;
-    left: 0;
-    bottom: 0;
+
     background-image: url(../img/sidebar-bg.png);
     background-position: center
 }
@@ -37,27 +38,9 @@ header{
     width: 70%;
 }
 
-.admin{
-    position: absolute;
-    bottom: 10px;
-}
-
 th > img{
     max-width: 25px;
 }
-
-
-/* .table-date{
-    border-style: none;
-} */
-
-/* table{
-    border: 1px solid black;
-} */
-
-/* tr{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.548);
-} */
 
 /* ----------- */
 
