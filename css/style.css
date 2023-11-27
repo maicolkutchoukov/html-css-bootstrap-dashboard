@@ -20,13 +20,13 @@
 }
 
 .aside-nav{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.85);
     background-image: url(../img/sidebar-bg.png);
     background-position: center
 }
 
 .aside-button{
-    --bs-btn-border-color: black
+    --bs-btn-border-color: none
 }
 
 /* .my-button{
@@ -36,7 +36,7 @@
 } */
 
 .offcanvas.my-offcanvas{
-    width: 70%;
+    width: 50%;
 }
 
 th > img{
@@ -51,6 +51,10 @@ th.name{
     box-shadow: none;
 }
 
+.accordion{
+    --bs-accordion-active-bg: none
+}
+
 /* ----------- */
 
 .row>*{
@@ -63,6 +67,11 @@ th.name{
 
 /* ------------ */
 
+@media screen and (max-width: 768px){
+    .offcanvas.my-offcanvas{
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 576px){
     tr > th:nth-child(2){
